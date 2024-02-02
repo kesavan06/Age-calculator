@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input">
+            <div>
+                <h1>DAY</h1>
+                <input type="text" tabindex="1" placeholder="DD" id="value_day">
+                <p id="day_error" style="color: red;margin-left: 30px;font-size: 12px;
+                margin-top: 5px;"></p>
+            </div>
+            <div>
+                <h1>MONTH</h1>
+                <input type="text" tabindex="2" placeholder="MM" id="value_month">
+                <p id="month_error" style="color: red;margin-left: 30px;font-size: 12px;
+                margin-top: 5px;"></p>
+            </div>
+            <div>
+                <h1>YEAR</h1>
+                <input type="text" tabindex="3" placeholder="YYYY" id="value_year">
+                <p id="year_error" style="color: red;margin-left: 30px;font-size: 12px;
+                margin-top: 5px;"></p>
+            </div>
+        </div>
+        <br><br>
+        <hr color="whitesmoke">
+        <div class="arrow">
+            <img tabindex="4" src="arrow-2.png" alt="click" id="get_age" onclick="validation()">
+        </div>
+        <div class="output">
+            <div class="o-year">
+                <h2 id="output_year">--</h2>
+                <h1>Years</h1>
+            </div>
+            <div class="o-month">
+                <h2 id="output_month">--</h2>
+                <h1>Months</h1>
+            </div>
+            <div class="o-day"> 
+                <h2 id="output_day">--</h2>
+                <h1>Day</h1>
+            </div>
+        </div>
+    </div>
+    <script src="logic.js" defer></script>
+</body>
+</html>
